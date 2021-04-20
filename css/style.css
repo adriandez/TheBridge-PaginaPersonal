@@ -1,0 +1,293 @@
+/* Tags */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+form {
+  margin: 2em 0;
+}
+
+fieldset {
+  border-radius: 8px;
+  border: solid 2px #000000;
+  padding: 1em 2em;
+  margin: 0 0.75em 1.5em 0.75em;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+legend {
+  font-size: 1.5em;
+  text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 4px grey, 0 0 6p;
+  color: #000000;
+  font-weight: 800;
+}
+
+input#submit {
+  background-color: #000000;
+  color: #fff;
+}
+
+input,
+textarea {
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100%;
+  cursor: text;
+  color: #707070;
+}
+
+textarea {
+  min-height: 160px;
+}
+
+label {
+  color: #000000;
+  font-size: 0.8em;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: black;
+}
+
+nav > ul > li > a {
+  color: white;
+}
+
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin-right: -8px;
+  font-size: 20px;
+  padding: 0.5rem;
+}
+
+a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: grey;
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+footer {
+  background-color: black;
+  display: inline-block;
+  width: 100%;
+  bottom: 0;
+}
+
+footer > p {
+  color: white;
+}
+
+p.right {
+  float: right;
+}
+
+p.left {
+  float: left;
+}
+
+figure.logo > img {
+  width: 100px;
+}
+
+hr {
+  width: 300px;
+}
+
+/* IDs */
+
+#img-bio {
+  padding-top: 10px;
+  display: block;
+  margin-left: 64px;
+  width: 350px;
+  height: auto;
+}
+
+#contact {
+  padding-top: 5px;
+  padding-bottom: 220px;
+}
+
+/* Class */
+
+section.talk > ul > li > a > img {
+  width: 40px;
+}
+
+section.talk > ul > li {
+  display: inline-flex;
+}
+
+section.talk {
+  float: right;
+  margin-right: 55px;
+}
+
+section.talk2 > ul > li > a > img {
+  width: 40px;
+}
+
+section.talk2 > ul > li {
+  display: inline-flex;
+}
+
+section.talk2 {
+  float: left;
+  margin-left: 20px;
+}
+
+.h2-h3-bio {
+  margin-left: 64px;
+}
+
+h3.h2-h3-bio {
+  font-size: 16px;
+}
+
+.menu {
+  display: flex;
+}
+
+.main-title {
+  width: 60%;
+  padding-left: 64px;
+}
+
+.work {
+  background: white;
+}
+
+.work {
+  width: 400px;
+}
+
+.centered {
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.centered {
+  max-width: 62em;
+}
+
+.porta {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  border-bottom: 2px solid grey;
+}
+
+label,
+input,
+textarea {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+.polaroid {
+  width: 350;
+}
+
+.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  box-shadow: 5px 5px 5px #777;
+}
+
+.button {
+  position: relative;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 1rem;
+  margin-bottom: 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+  overflow: hidden;
+  padding: 1.2rem 2.4rem;
+  transition: all 0.3s ease-out;
+  margin-left: 55px;
+  float: left;
+}
+
+.button_3 > a {
+  color: white;
+}
+
+.button_3:hover {
+  transform: translateY(-2px) scale(1.1);
+  background: grey;
+  color: white;
+}
+
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1.5em;
+  position: relative;
+}
+
+input:placeholder-shown + label,
+textarea:placeholder-shown + label {
+  cursor: text;
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: -2.125rem 0;
+  transform: translate(0, 2.125rem) scale(1.25);
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label,
+textarea:not(:placeholder-shown) + label,
+textarea:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  fieldset {
+    max-width: 600px;
+    margin-left: 64px;
+  }
+}
